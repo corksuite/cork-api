@@ -1,0 +1,10 @@
+Copyright (c) 2026 Your Name. All rights reserved.
+
+This source code and all associated files are the exclusive property of the copyright holder. 
+
+Strictly Prohibited:
+- Redistribution, copying, cloning, or mirroring of this codebase in whole or in part.
+- Modification, adaptation, or creation of derivative works based on this software.
+- Using this code for commercial or non-commercial production purposes.
+
+Permission is granted solely to view the source code directly on this GitHub repository for educational or review purposes. Any other use requires prior written consent from the copyright holder.
