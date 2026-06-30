@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+from typing import Any, Callable
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -9,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 load_dotenv(BASE_DIR / ".env")
 
 
-def env(key, default=None, cast=str):
+def env(key: str, default: Any=None, cast: Callable[[Any], Any]=str):
     value = os.getenv(key, default)
 
     if value is None:
@@ -30,5 +31,5 @@ def database_config():
         "PASSWORD": env("POSTGRES_PASSWORD", "corkpass"),
         "HOST": env("POSTGRES_HOST", "localhost"),
         "PORT": env("POSTGRES_PORT", "5432"),
-        "CONN_MAX_AGE": env("POSTGRES_CONN_MAX_AGE", 60),
+        "CONN_MAX_AGE": env("POSTGRES_CONN_MAX_AGE", 60, int),
     }

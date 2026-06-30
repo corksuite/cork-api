@@ -22,9 +22,9 @@ from .env import BASE_DIR, database_config, env
 SECRET_KEY = env('DJANGO_SECRET_KEY', 'django-insecure-02(*8^@1vpd+i&(-g+-!xe=--*ra2w0a5)gxnnk63x&vr1jsb!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DJANGO_DEBUG', default=True)
+DEBUG = env('DJANGO_DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default='')
+ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default=[''], cast=list)
 
 
 # Application definition
