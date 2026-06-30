@@ -1,3 +1,5 @@
 Django==5.2.15
 djangorestframework==3.16.1
 Pillow==11.3.0
+psycopg[binary]
+python-dotenv

@@ -43,6 +43,8 @@ media/
 
 # Secret / Environment files
 .env
+.env.production
+.env.production
 .secrets
 
 # JetBrains IDEs (PyCharm, WebStorm, etc.)
