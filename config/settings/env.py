@@ -30,5 +30,5 @@ def database_config():
         "PASSWORD": env("POSTGRES_PASSWORD", "corkpass"),
         "HOST": env("POSTGRES_HOST", "localhost"),
         "PORT": env("POSTGRES_PORT", "5432"),
-        "CONN_MAX_AGE": env("POSTGRES_CONN_MAX_AGE", 60, int),
+        "CONN_MAX_AGE": env("POSTGRES_CONN_MAX_AGE", 60),
     }
