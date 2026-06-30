@@ -17,9 +17,9 @@ DJANGO_APPS = [
 # ==============================================================================
 
 THIRD_PARTY_APPS = [
-    "rest_framework",
-    "drf_spectacular",
-    "corsheaders",
+    # "rest_framework",
+    # "drf_spectacular",
+    # "corsheaders",
 ]
 
 # ==============================================================================
@@ -59,7 +59,7 @@ WORK_APPS = [
 # ==============================================================================
 
 COLLABORATION_APPS = [
-    "apps.collaboration.messages.apps.MessagesConfig",
+    "apps.collaboration.messaging.apps.MessagingConfig",
     "apps.collaboration.channels.apps.ChannelsConfig",
     "apps.collaboration.meetings.apps.MeetingsConfig",
     "apps.collaboration.notifications.apps.NotificationsConfig",
