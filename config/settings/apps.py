@@ -74,7 +74,7 @@ COLLABORATION_APPS = [
 
 KNOWLEDGE_APPS = [
     "apps.knowledge.documents.apps.DocumentsConfig",
-    "apps.knowledge.media.apps.MediaConfig",
+    "apps.knowledge.assets.apps.AssetsConfig",
     "apps.knowledge.wiki.apps.WikiConfig",
     "apps.knowledge.search.apps.SearchConfig",
 ]
