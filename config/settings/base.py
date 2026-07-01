@@ -36,12 +36,12 @@ ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default=[''], cast=list)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -62,12 +62,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-CORS_ALLOW_ALL_ORIGINS = env('DJANGO_CORS_ALLOW_ALL_ORIGINS', default=True, cast=bool)
 CORS_ALLOW_CREDENTIALS = env('DJANGO_CORS_ALLOW_CREDENTIALS', default=True, cast=bool)
 CORS_ALLOWED_ORIGINS = env('DJANGO_CORS_ALLOWED_ORIGINS', default=[], cast=list)
-print(CORS_ALLOW_ALL_ORIGINS)
-print(CORS_ALLOW_CREDENTIALS)
-print(CORS_ALLOWED_ORIGINS)
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
